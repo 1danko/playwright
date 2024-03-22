@@ -14,7 +14,7 @@ test.describe('User Registration Tests', () => {
         await page.goto('file:///D:/TestAutomation/playwright_course_by_VasilShpak/playwright/tests/workshop_6/index.html');
     })
 
-    test.only('Register with valid data', async ({page}) => {
+    test.skip('Register with valid data', async ({page}) => {
 
         await page.fill('#firstName', testData.firstName);
         await page.fill('#lastName', testData.lastName);
@@ -34,7 +34,7 @@ test.describe('User Registration Tests', () => {
         await expect(numberText).toEqual(testData.number);
     })
     
-    test.only('Register with empty fields', async ({page}) => {
+    test.skip('Register with empty fields', async ({page}) => {
         await page.goto('file:///D:/TestAutomation/playwright_course_by_VasilShpak/playwright/tests/workshop_6/index.html');
         
         await page.fill('#firstName', testData.firstName);
@@ -47,7 +47,7 @@ test.describe('User Registration Tests', () => {
     })
 
 
-    test.only('Register with all empty fields', async ({page}) => {
+    test.skip('Register with all empty fields', async ({page}) => {
 
         await page.click('#register'); //button
 
