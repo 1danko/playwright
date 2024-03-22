@@ -27,7 +27,7 @@ test.skip('Add Cookie', async({page}) => {
     await expect(sessionCookie).toBeDefined();
 })
 
-test.only('Delete Cookie', async ({page}) => {
+test.skip('Delete Cookie', async ({page}) => {
     await page.goto('file:///D:/TestAutomation/playwright_course_by_VasilShpak/playwright/tests/workshop_5/index.html');
 
     await page.click('#setCookie');
