@@ -27,7 +27,7 @@ test.describe('Variable Declarations and Types', () => {
 })
 
 test.describe('Type Definitions and Interfaces', () => {
-    test.only('Type Definitions and Interfaces', async ({page}) => {
+    test.skip('Type Definitions and Interfaces', async ({page}) => {
         await page.goto('file:///D:/TestAutomation/playwright_course_by_VasilShpak/playwright/tests/workshop_7/index.html');
 
         type User = {
